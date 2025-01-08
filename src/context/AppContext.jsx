@@ -11,3 +11,4 @@ const initialState = { theme: "light", user: null };
       return { ...state, user: action.payload };
     case "logout":
       return { ...state, user: null };
+  const [state, dispatch] = useReducer(reducer, initialState);
