@@ -5,3 +5,6 @@
 
   const login = (name, email) => setUser({ name, email });
   const logout = () => setUser(null);
+    <PhoneContext.Provider value={{ theme, toggleTheme, user, login, logout }}>
+      {children}
+    </PhoneContext.Provider>
