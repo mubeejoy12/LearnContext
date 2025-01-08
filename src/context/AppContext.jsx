@@ -7,3 +7,5 @@ const initialState = { theme: "light", user: null };
         ...state,
         theme: state.theme === "light" ? "dark" : "light",
       };
+    case "login":
+      return { ...state, user: action.payload };
