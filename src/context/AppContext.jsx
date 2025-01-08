@@ -12,3 +12,6 @@ const initialState = { theme: "light", user: null };
     case "logout":
       return { ...state, user: null };
   const [state, dispatch] = useReducer(reducer, initialState);
+    <AppContext.Provider value={{ state, dispatch }}>
+      {children}
+    </AppContext.Provider>
