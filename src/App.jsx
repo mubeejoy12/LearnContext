@@ -15,14 +15,12 @@ function App() {
   // const [user, setUser] = useState(null);
 
   return (
-    <ThemeProvider>
-      <AuthProvider>
+          <PhoneProvider>
         <div className="min-h-screen flex flex-col">
           <Header />
           <Dashboard />
         </div>
-      </AuthProvider>
-    </ThemeProvider>
+          </PhoneProvider>
     // 2. provide the themeValue to the context
     // <ThemeContext.Provider value={{ theme, setTheme }}>
     //   <div
