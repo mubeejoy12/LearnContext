@@ -8,3 +8,4 @@
     <PhoneContext.Provider value={{ theme, toggleTheme, user, login, logout }}>
       {children}
     </PhoneContext.Provider>
+export const usePhone = () => useContext(PhoneContext);
