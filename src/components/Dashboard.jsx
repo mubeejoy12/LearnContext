@@ -7,11 +7,11 @@ export const Dashboard = () => {
 
   return (
     <main className="flex-1 p-4">
-      {user ? (
+      {state.user ? (
         <div>
           <h2 className="text-xl font-bold">User Dashboard</h2>
-          <p>Name: {user.name}</p>
-          <p>Email: {user.email}</p>
+          <p>Name: {state.user.name}</p>
+          <p>Email: {state.user.email}</p>
         </div>
       ) : (
         <p>Please log in to access the dashboard.</p>
