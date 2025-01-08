@@ -1,9 +1,12 @@
-import React from 'react'
-import { useAuth } from '../context/AuthContext'
-
+import React from "react";
+import { useAppContext } from "../context/AppContext";
+// import { usePhone } from "../context/PhoneContext";
+// import { useAuth } from '../context/AuthContext'
 
 export const Dashboard = () => {
-  const {user} = useAuth()
+  // const { user } = usePhone();
+   const { state } = useAppContext();
+ 
 
   return (
     <main className="flex-1 p-4">
@@ -17,5 +20,5 @@ export const Dashboard = () => {
         <p>Please log in to access the dashboard.</p>
       )}
     </main>
-  )
-}
+  );
+};
