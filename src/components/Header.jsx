@@ -1,10 +1,12 @@
 import React from "react";
-import { useAuth } from "../context/AuthContext";
-import { useTheme } from "../context/ThemeContext";
+import { usePhone } from "../context/PhoneContext";
+// import { useAuth } from "../context/AuthContext";
+// import { useTheme } from "../context/ThemeContext";
 
 export const Header = () => {
-  const { user, login, logout } = useAuth();
-  const { theme, toggleTheme } = useTheme();
+  // const { user, login, logout } = useAuth();
+  // const { theme, toggleTheme } = useTheme();
+  const { user, login, logout, theme, toggleTheme } = usePhone();
 
   const demoUser = { name: "My boss", email: "myboss@gamil.com" };
 
@@ -26,7 +28,7 @@ export const Header = () => {
         </button>
         {user ? (
           <>
-            <span>Welcome, {user.name}</span>
+            <span>Welcome, {demoUser.name}</span>
             <button onClick={logout} className="px-4 py-2 bg-red-500 rounded">
               Logout
             </button>
