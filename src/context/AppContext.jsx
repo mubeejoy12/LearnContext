@@ -15,3 +15,4 @@ const initialState = { theme: "light", user: null };
     <AppContext.Provider value={{ state, dispatch }}>
       {children}
     </AppContext.Provider>
+export const useAppContext = () => useContext(AppContext);
