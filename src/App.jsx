@@ -2,8 +2,12 @@
 // import { AuthProvider } from "./context/AuthContext";
 import { Header } from "./components/Header";
 import { Dashboard } from "./components/Dashboard";
+import { TaskProvider } from "./context/TaskContext";
 // import Main from "./components/Main";
 import { PhoneProvider } from "./context/PhoneContext";
+import Counter from "./UseReducer/Counter";
+import { AppProvider } from "./context/AppContext";
+import { SecondHeader } from "./components/SecondHeader";
 
 // first create the context CreateContext
 // const ThemeContext = createContext();
@@ -20,10 +24,16 @@ function App() {
     // <AuthProvider>
     // <TaskProvider>
     // <PhoneProvider>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <Dashboard />
-        </div>
+    <AppProvider>
+      <div className="min-h-screen flex flex-col">
+        {/* <Header /> */}
+        {/* <Main /> */}
+
+        <SecondHeader />
+        <Dashboard />
+        {/* <Counter /> */}
+      </div>
+    </AppProvider>
     // </PhoneProvider>
     // </TaskProvider>
     // </AuthProvider>
