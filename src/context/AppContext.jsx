@@ -9,3 +9,5 @@ const initialState = { theme: "light", user: null };
       };
     case "login":
       return { ...state, user: action.payload };
+    case "logout":
+      return { ...state, user: null };
