@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
+const PhoneContext = createContext();
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
