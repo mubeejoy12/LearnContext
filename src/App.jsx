@@ -2,6 +2,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { AuthProvider } from "./context/AuthContext";
 import { Header } from "./components/Header";
 import { Dashboard } from "./components/Dashboard";
+import { PhoneProvider } from "./context/PhoneContext";
 
 // first create the context CreateContext
 // const ThemeContext = createContext();
