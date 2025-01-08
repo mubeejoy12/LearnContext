@@ -1,7 +1,8 @@
-import { ThemeProvider } from "./context/ThemeContext";
-import { AuthProvider } from "./context/AuthContext";
+// import { ThemeProvider } from "./context/ThemeContext";
+// import { AuthProvider } from "./context/AuthContext";
 import { Header } from "./components/Header";
 import { Dashboard } from "./components/Dashboard";
+// import Main from "./components/Main";
 import { PhoneProvider } from "./context/PhoneContext";
 
 // first create the context CreateContext
@@ -15,12 +16,18 @@ function App() {
   // const [user, setUser] = useState(null);
 
   return (
-          <PhoneProvider>
+    // <ThemeProvider>
+    // <AuthProvider>
+    // <TaskProvider>
+    // <PhoneProvider>
         <div className="min-h-screen flex flex-col">
           <Header />
           <Dashboard />
         </div>
-          </PhoneProvider>
+    // </PhoneProvider>
+    // </TaskProvider>
+    // </AuthProvider>
+    // </ThemeProvider>
     // 2. provide the themeValue to the context
     // <ThemeContext.Provider value={{ theme, setTheme }}>
     //   <div
